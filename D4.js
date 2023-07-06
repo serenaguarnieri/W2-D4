@@ -45,22 +45,31 @@ console.log(crazySum(10, 10));
  Deve inoltre tornare la differenza assoluta moltiplicata per tre qualora il numero fornito sia maggiore di 19.
 */
 
-function crazyDiff(number) {
-  const diff = Math.abs(number - 19);
-  if (number > 19) {
-    return diff * 3;
-  } else {
-    return diff;
-  }
-}
-console.log(crazyDiff(17));
-
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+const crazyDiff = function (num) {
+  if (num > 19) {
+    return Math.abs(num - 19) * 3;
+  } else {
+    return Math.abs(num - 19);
+  }
+};
+console.log(crazyDiff(3));
 
 /* ESERCIZIO 4
  Scrivi una funzione di nome "boundary" che accetta un numero intero n come parametro, e ritorna true se n è compreso tra 20 e 100 (incluso) oppure
- se n è uguale a 400.
+ se n è uguale a 400.const crazyDiff = function (num) {
+
 */
+const boundary = function (n) {
+  if ((n > 20 && n >= 100) || n === 400) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+console.log("ex 4", boundary(3));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
